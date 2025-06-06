@@ -29,7 +29,7 @@ import { motion } from "framer-motion";
 // about data
 const about = {
   title:
-    "Whats am I more than a Front-end developer?  — I’m a storyteller who brings technology to life through design",
+    "What am I more than a Front-end developer?  — I’m a storyteller who brings technology to life through design",
   description:
     "My philosophy? Every pixel has a purpose, and every interface should feel like a conversation.If you aren't able to find me in front of my PC, come find me at the gym refreshing my mind.",
   info: [
