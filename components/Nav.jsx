@@ -9,7 +9,7 @@ const links = [
     path: "/",
   },
   {
-    name: "services",
+    name: "Skills",
     path: "/services",
   },
   {
@@ -17,7 +17,7 @@ const links = [
     path: "/resume",
   },
   {
-    name: "work",
+    name: "Projects",
     path: "/work",
   },
   {

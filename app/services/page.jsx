@@ -8,28 +8,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "I build responsive, high-performance websites using modern frameworks like Angular, React, Vue.js and Next.js. From interactive dashboards to user-friendly platforms, I focus on clean code, seamless navigation, and engaging experiences across all devices.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "I create intuitive, accessible, and visually appealing interfaces that enhance user engagement. With tools like Figma, Adobe Photoshop/XD, and Illustrator, I turn complex ideas into user-centered designs that tell a story and drive interaction",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Cloud Development/Deployment",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Certified and Skilled in deploying scalable applications using AWS (EC2, S3, RDS) and automating CI/CD pipelines with Jenkins and Docker. I ensure secure, reliable, and fault-tolerant systems — optimized for real-world performance and availability",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "LOGO Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Not an expert, but definitely passionate. I enjoy creating clean, eye-catching logos that reflect a brand’s vibe — whether it’s for a t-shirt graphic or company's logo. Oh! I designed logo for the RenaultNissan's EV lineup during my bachelor's , though they decided not to use it at the end, haha",
     href: "",
   },
 ];

@@ -22,38 +22,64 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Resilience Web Application -  SEL for K-12 students",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
+      "Redesigned 'Resilience' web application UI for simplicity and elegance, focusing on intuitive navigation, clear visuals, and user-friendly experience.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, { name: "Typescript" }, { name: "Figma" }],
+    image: "/assets/work/sel.png",
+    live: "https://www.mylearningtools.org/",
     github: "",
   },
-  {
+ {
     num: "02",
-    category: "fullstack",
+    category: "Gyrus – NEET Preparation Platform",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
+      "Developed a comprehensive online platform for UG-NEET preparation, offering organized content across Physics, Chemistry, Botany, and Zoology. The application emphasizes fun-based learning, AI-powered analytics, and provides a vast question bank covering over 6 years of NEET questions with detailed explanations.",
+    stack: [{ name: "Angular13" }, { name: "Javascript" }, { name: "Typescript" }, { name: "Adobe Photoshop/Illustrator" }],
+    image: "/assets/work/gyru.png",
+    live: "https://www.gyrusneet.com/",
     github: "",
   },
+
   {
     num: "03",
-    category: "frontend",
+    category: "FiscalSenseAI – AI-Powered Financial Chat Assistant",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
+      "Developed a responsive web application featuring an AI-driven chat assistant designed to provide users with real-time financial insights and guidance. The platform emphasizes intuitive user interaction and seamless access to fiscal information.",
+    stack: [{ name: "HTML5" }, { name: "CSS" }, { name: "Angular13" }, { name: "Tailwind.css" }, { name: "Vue.js" }],
+    image: "/assets/work/fai.png",
+    live: "https://fsai-frontend.onrender.com/login",
     github: "",
   },
+
+  { 
+    num: "04",
+    category: "CS Survey App – Full-Stack Student Feedback System",
+    title: "project 4",
+    description:
+      "Developed a full-stack web application to gather and manage prospective student feedback, leveraging Angular, HTML, CSS and bootstarp for a dynamic UI. Utilized Spring Boot with API's for robust backend data handling, contributing to improved university engagement insights.",
+    stack: [{ name: "Angular10" }, { name: "Typescript" }, { name: "Bootstrap" }, { name: "springboot" }, { name: "SQL" }],
+    image: "/assets/work/cs.png",
+    live: "https://growproin.com/",
+    github: "https://github.com/Kawlite/Surveyproj",
+},
+
+  { 
+    num: "05",
+    category: "GrowProin – Easy Online Education Across All Ages",
+    title: "project 5",
+    description:
+      "Revolutionizing the online learning platform aimed at delivering accessible, high-quality education for learners of all ages.",
+    stack: [{ name: "HTML5" }, { name: "CSS" }, { name: "Angular13" }, { name: "Tailwind.css" }, { name: "Vue.js" }],
+    image: "/assets/work/gp.png",
+    live: "https://growproin.com/",
+    github: "",
+},
 ];
+
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -84,7 +110,7 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.category} 
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
@@ -143,19 +169,18 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image */}
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-cover"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                   <div className="h-[460px] group flex justify-center items-center bg-background border border-white/10 rounded-xl p-4">
+  <div className="relative w-full h-full">
+    <Image
+      src={project.image}
+      layout="responsive"
+      width={700}
+      height={460}
+      className="object-contain"
+      alt="Project screenshot"
+    />
+  </div>
+</div>
                   </SwiperSlide>
                 );
               })}
