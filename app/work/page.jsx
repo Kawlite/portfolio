@@ -27,7 +27,7 @@ const projects = [
     description:
       "Redesigned 'Resilience' web application UI for simplicity and elegance, focusing on intuitive navigation, clear visuals, and user-friendly experience.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, { name: "Typescript" }, { name: "Figma" }],
-    image: "/assets/work/sel.png",
+    image: "/assets/work/Sel.png",
     live: "https://www.mylearningtools.org/",
     github: "",
   },
@@ -62,7 +62,7 @@ const projects = [
     description:
       "Developed a full-stack web application to gather and manage prospective student feedback, leveraging Angular, HTML, CSS and bootstarp for a dynamic UI. Utilized Spring Boot with API's for robust backend data handling, contributing to improved university engagement insights.",
     stack: [{ name: "Angular10" }, { name: "Typescript" }, { name: "Bootstrap" }, { name: "springboot" }, { name: "SQL" }],
-    image: "/assets/work/cs.png",
+    image: "/assets/work/CS.png",
     live: "https://growproin.com/",
     github: "https://github.com/Kawlite/Surveyproj",
 },
