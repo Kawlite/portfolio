@@ -25,7 +25,8 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-
+import { FaJava, FaReact, FaAngular, FaNodeJs, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import { SiSpringboot, SiHibernate, SiKubernetes, SiJenkins, SiMongodb, SiPostgresql, SiMysql, SiOracle, SiApachemaven, SiGradle } from "react-icons/si";
 // about data
 const about = {
   title:
@@ -59,14 +60,14 @@ const experience = {
     "Front-End Developer with full-stack capabality. Experinced in building responsive and user-friendly applications using Angular, HTML/CSS/JS/TS, Figma, Adobe Photoshop/Illustartor and modern Web technologies. Skilled in UI/UX design, Web Development , Cloud Deployment, and CI/CD pipelines, with a keen eye for detail and usability.",
   items: [
     {
-      company: "Resilience Inc. – Tampa, FL",
-      position: "Web Developer",
-      duration: "May 2024 – Aug 2024",
+      company: "State Street, USA",
+      position: "Full Stack Java Developer",
+      duration: "June 2024 - Current",
     },
     {
-      company: "Yourbackers Inc",
-      position: "Software Developer-FrontEnd",
-      duration: "September 2020 – Nov 2022",
+      company: "Freshworks Inc, India",
+      position: "Java Developer",
+      duration: "Jan 2020 - Dec 2022",
     },
     {
       company: "George Mason University - Computing College",
@@ -118,24 +119,60 @@ const education = {
 
 // skills data
 const skills = {
-  title: "My skills",
+  title: "Technical Skills",
   skillList: [
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3 />, name: "CSS3" },
-    { icon: <FaJs />, name: "JavaScript" },
-    { icon: "/assets/resume/icons/typescript.svg", name: "TypeScript" },
+    // Programming Languages
+    { icon: <FaJava />, name: "Java (8/11/17)" },
+    { icon: <FaNodeJs />, name: "JavaScript" },
+    { icon: null, name: "Python" },
+    { icon: null, name: "PL/SQL" },
+    { icon: null, name: "C++" },
+
+    // Backend & Frameworks
+    { icon: <SiSpringboot />, name: "Spring Boot" },
+    { icon: null, name: "Spring MVC" },
+    { icon: null, name: "Spring Security" },
+    { icon: <SiHibernate />, name: "Hibernate" },
+    { icon: null, name: "Spring Data JPA" },
+    { icon: null, name: "Microservices Architecture" },
+
+    // Frontend
     { icon: <FaReact />, name: "React.js" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <FaFigma />, name: "Figma" },
-    { icon: <SiAdobephotoshop />, name: "Adobe Photoshop" },
-    { icon: <SiAdobeillustrator />, name: "Adobe Illustrator" },
-    { icon: "/assets/resume/icons/aws.svg", name: "AWS" },
-    { icon: "/assets/resume/icons/docker.svg", name: "Docker" },
-    { icon: "/assets/resume/icons/kubernetes.svg", name: "Kubernetes" },
-    
-    { icon: "/assets/resume/icons/jenkins.svg", name: "Jenkins" },
+    { icon: <FaAngular />, name: "Angular" },
+    { icon: null, name: "HTML5" },
+    { icon: null, name: "CSS3" },
+    { icon: null, name: "TypeScript" },
+    { icon: null, name: "Bootstrap" },
+
+    // Databases
+    { icon: <SiMysql />, name: "MySQL" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiOracle />, name: "Oracle" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: null, name: "SQL Server" },
+    { icon: null, name: "Cassandra" },
+    { icon: null, name: "DynamoDB" },
+
+    // DevOps & Cloud
+    { icon: <FaDocker />, name: "Docker" },
+    { icon: <SiKubernetes />, name: "Kubernetes" },
+    { icon: <SiJenkins />, name: "Jenkins" },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: null, name: "Azure" },
+    { icon: null, name: "GCP" },
+
+    // Build & Version Control
+    { icon: <FaGitAlt />, name: "Git" },
+    { icon: <SiApachemaven />, name: "Maven" },
+    { icon: <SiGradle />, name: "Gradle" },
+
+    // Testing
+    { icon: null, name: "JUnit" },
+    { icon: null, name: "Mockito" },
+    { icon: null, name: "Selenium" },
+    { icon: null, name: "TestNG" },
+    { icon: null, name: "JMeter" },
+    { icon: null, name: "Cucumber" },
   ],
 };
 

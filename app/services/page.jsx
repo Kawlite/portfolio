@@ -2,39 +2,38 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Full Stack Development",
     description:
-      "I build responsive, high-performance websites using modern frameworks like Angular, React, Vue.js and Next.js. From interactive dashboards to user-friendly platforms, I focus on clean code, seamless navigation, and engaging experiences across all devices.",
+      "Design and development of scalable enterprise applications using Java, Spring Boot, Microservices, React, and Angular. I build secure RESTful APIs, responsive front-end interfaces, and high-performance systems tailored for business-critical environments.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Backend & Microservices Architecture",
     description:
-      "I create intuitive, accessible, and visually appealing interfaces that enhance user engagement. With tools like Figma, Adobe Photoshop/XD, and Illustrator, I turn complex ideas into user-centered designs that tell a story and drive interaction",
+      "Development of robust backend systems using Spring Boot, Spring Security, Hibernate, and JPA. I specialize in microservices architecture, API integrations, database optimization, caching strategies, and secure authentication mechanisms.",
     href: "",
   },
   {
     num: "03",
-    title: "Cloud Development/Deployment",
+    title: "Cloud & DevOps Engineering",
     description:
-      "Certified and Skilled in deploying scalable applications using AWS (EC2, S3, RDS) and automating CI/CD pipelines with Jenkins and Docker. I ensure secure, reliable, and fault-tolerant systems — optimized for real-world performance and availability",
+      "Deployment of scalable cloud-native applications on AWS and Azure. Experienced in Docker containerization, Kubernetes orchestration, and CI/CD automation using Jenkins to ensure reliable, secure, and high-availability systems.",
     href: "",
   },
   {
     num: "04",
-    title: "LOGO Design",
+    title: "Database & Performance Optimization",
     description:
-      "Not an expert, but definitely passionate. I enjoy creating clean, eye-catching logos that reflect a brand’s vibe — whether it’s for a t-shirt graphic or company's logo. Oh! I designed logo for the RenaultNissan's EV lineup during my bachelor's , though they decided not to use it at the end, haha",
+      "Design and optimization of relational and NoSQL databases including MySQL, PostgreSQL, Oracle, MongoDB, and DynamoDB. I focus on query tuning, ORM optimization, indexing strategies, and performance enhancement for large-scale systems.",
     href: "",
   },
 ];
-
-import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -44,7 +43,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 0.4, duration: 0.6, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
@@ -66,12 +65,15 @@ const Services = () => {
                     <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>
+
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[32px] xl:text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>
+
                 {/* description */}
                 <p className="text-white/60">{service.description}</p>
+
                 {/* border */}
                 <div className="border-b border-white/20 w-full"></div>
               </div>
