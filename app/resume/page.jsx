@@ -317,6 +317,7 @@ const Resume = () => {
 
             {/* About */}
             {/* About */}
+{/* About */}
 <TabsContent value="about" className="w-full text-center xl:text-left">
   <div className="flex flex-col gap-[30px]">
     <h3 className="text-4xl font-bold">{about.title}</h3>
@@ -327,10 +328,14 @@ const Resume = () => {
       {about.info.map((item, index) => (
         <li
           key={index}
-          className="flex flex-col xl:flex-row items-start xl:items-center gap-2 xl:gap-4 break-words"
+          className="flex flex-col xl:flex-row items-start gap-2 xl:gap-4"
         >
-          <span className="text-white/60 min-w-[120px]">{item.fieldName}</span>
-          <span className="text-xl break-words">{item.fieldValue}</span>
+          <span className="text-white/60 font-medium w-full xl:w-[140px] break-words">
+            {item.fieldName}
+          </span>
+          <span className="text-xl text-white break-words w-full">
+            {item.fieldValue}
+          </span>
         </li>
       ))}
     </ul>
