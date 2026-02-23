@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+
+// React Icons — grouped without duplicates
 import {
   FaHtml5,
   FaCss3,
@@ -8,14 +10,31 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaJava,
+  FaAngular,
+  FaDocker,
+  FaAws,
+  FaGitAlt,
 } from "react-icons/fa";
+
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiSpringboot,
+  SiHibernate,
+  SiKubernetes,
+  SiJenkins,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiOracle,
+  SiApachemaven,
+  SiGradle,
 } from "react-icons/si";
 
+// UI Components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -24,25 +43,23 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
-import { FaJava, FaReact, FaAngular, FaNodeJs, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
-import { SiSpringboot, SiHibernate, SiKubernetes, SiJenkins, SiMongodb, SiPostgresql, SiMysql, SiOracle, SiApachemaven, SiGradle } from "react-icons/si";
-// about data
+
+// Animation
+import { motion } from "framer-motion";// about data
 const about = {
   title:
-    "What am I more than a Front-end developer?  — I’m a storyteller who brings technology to life through design",
+    "Full Stack Java Developer",
   description:
-    "My philosophy? Every pixel has a purpose, and every interface should feel like a conversation.If you aren't able to find me in front of my PC, come find me at the gym refreshing my mind.",
+    "Full Stack Java Developer with 5+ years of experience building scalable web applications using Java, Spring Boot, Microservices, and front-end frameworks like React/Angular. Skilled in REST APIs, database optimization, CI/CD pipelines, and cloud platforms.",
   info: [
     { fieldName: "Name", fieldValue: "Kaushik Balakesavalu" },
     { fieldName: "Phone", fieldValue: "(+1) 571 373 6466" },
-    { fieldName: "Experience", fieldValue: "2.5+ Years" },
-    { fieldName: "Discord", fieldValue: "leonide_7" },
+    { fieldName: "Experience", fieldValue: "5+ Years" },
     { fieldName: "Nationality", fieldValue: "Indian" },
-    { fieldName: "Email", fieldValue: "kaushik.2000r7@gmail.com" },
+    { fieldName: "Email", fieldValue: "kaushikbalakesavalu@gmail.com" },
     {
       fieldName: "Current Company",
-      fieldValue: "Activley looking for Web Developer roles",
+      fieldValue: "State Street - Actively looking for new opportunities ",
     },
     {
       fieldName: "Languages",

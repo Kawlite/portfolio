@@ -1,3 +1,9 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
 const projects = [
   {
     num: "01",
@@ -11,7 +17,7 @@ const projects = [
       { name: "React.js" },
       { name: "Hibernate" },
       { name: "Oracle" },
-      { name: "AWS" }
+      { name: "AWS" },
     ],
     image: "/assets/work/finance.png",
     live: "",
@@ -29,7 +35,7 @@ const projects = [
       { name: "Microservices" },
       { name: "Docker" },
       { name: "Kubernetes" },
-      { name: "Jenkins" }
+      { name: "Jenkins" },
     ],
     image: "/assets/work/microservices.png",
     live: "",
@@ -46,7 +52,7 @@ const projects = [
       { name: "Jenkins" },
       { name: "Docker" },
       { name: "Git" },
-      { name: "Spring Boot" }
+      { name: "Spring Boot" },
     ],
     image: "/assets/work/devops.png",
     live: "",
@@ -63,7 +69,7 @@ const projects = [
       { name: "Spring Boot" },
       { name: "MySQL" },
       { name: "REST API" },
-      { name: "JWT" }
+      { name: "JWT" },
     ],
     image: "/assets/work/survey.png",
     live: "",
@@ -80,10 +86,85 @@ const projects = [
       { name: "Oracle" },
       { name: "MongoDB" },
       { name: "JPA" },
-      { name: "Caching" }
+      { name: "Caching" },
     ],
     image: "/assets/work/database.png",
     live: "",
     github: "",
   },
 ];
+
+const Work = () => {
+  return (
+    <motion.div
+      className="min-h-screen py-12 px-6 bg-[#1b1b1f]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.6 } }}
+    >
+      <h1 className="text-5xl font-bold text-center text-white mb-12">
+        My Projects
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        {projects.map((project, idx) => (
+          <motion.div
+            key={idx}
+            className="bg-[#232329] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            whileHover={{ scale: 1.03 }}
+          >
+            <div className="relative w-full h-[200px]">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="p-6 flex flex-col gap-3 flex-1">
+              <span className="text-accent font-bold">{project.num}</span>
+              <h2 className="text-xl font-semibold text-white">{project.title}</h2>
+              <p className="text-white/70 flex-1">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2 mt-3">
+                {project.stack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-accent/20 text-accent text-xs px-2 py-1 rounded"
+                  >
+                    {tech.name}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4 mt-4">
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent underline"
+                  >
+                    Live
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent underline"
+                  >
+                    GitHub
+                  </a>
+                )}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+export default Work;

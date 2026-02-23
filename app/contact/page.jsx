@@ -27,11 +27,6 @@ const info = [
     title: "Email",
     description: "kaushikbalakesavalu@gmail.com",
   },
-  {
-    icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "11100, Cavalier Ct Apt 1B",
-  },
 ];
 
 import { motion } from "framer-motion";
