@@ -318,27 +318,29 @@ const Resume = () => {
             {/* About */}
             {/* About */}
 {/* About */}
-<TabsContent value="about" className="w-full text-center xl:text-left">
-  <div className="flex flex-col gap-[30px]">
-    <h3 className="text-4xl font-bold">{about.title}</h3>
-    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-      {about.description}
+<TabsContent value="about" className="w-full text-left">
+  <div className="flex flex-col gap-8 max-w-[800px] mx-auto">
+    <h3 className="text-4xl font-bold">Full Stack Java Developer</h3>
+    <p className="text-white/60 text-base leading-relaxed">
+      Full Stack Java Developer with 5+ years of experience building scalable web applications using Java, Spring Boot, Microservices, and front-end frameworks like React/Angular. Skilled in REST APIs, database optimization, CI/CD pipelines, and cloud platforms.
     </p>
-    <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-      {about.info.map((item, index) => (
-        <li
-          key={index}
-          className="flex flex-col xl:flex-row items-start gap-2 xl:gap-4"
-        >
-          <span className="text-white/60 font-medium w-full xl:w-[140px] break-words">
-            {item.fieldName}
-          </span>
-          <span className="text-xl text-white break-words w-full">
-            {item.fieldValue}
-          </span>
-        </li>
+
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-4 gap-x-12 text-white text-lg">
+      {[
+        { label: "Name", value: "Kaushik Balakesavalu" },
+        { label: "Phone", value: "(+1) 571 373 6466" },
+        { label: "Experience", value: "5+ Years" },
+        { label: "Nationality", value: "Indian" },
+        { label: "Email", value: "kaushikbalakesavalu@gmail.com" },
+        { label: "Current Company", value: "State Street - Actively looking for new opportunities" },
+        { label: "Languages", value: "English, Regional (Indian- Tamil, Telugu, Hindi, Kannada)" },
+      ].map((item, idx) => (
+        <div key={idx} className="grid grid-cols-[140px_1fr] gap-4 items-start">
+          <span className="text-white/60 font-medium">{item.label}</span>
+          <span className="break-words">{item.value}</span>
+        </div>
       ))}
-    </ul>
+    </div>
   </div>
 </TabsContent>
           </div>
